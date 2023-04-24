@@ -1,0 +1,103 @@
+﻿<Window x:Class="Tesztkerdesek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tesztkerdesek"
+        mc:Ignorable="d"
+        Title="Tesztkerdesek" Height="450" Width="700">
+    <Grid>
+
+        <StackPanel>
+            <StackPanel HorizontalAlignment="Left"
+                        Margin="5">
+
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Top">
+
+                    <Label Content="2. feladat:"                  
+                           FontSize="15"/>
+                    <Label Content=""
+                           x:Name="lblfeladat2"
+                           Margin="90 -30 50 10"
+                           FontSize="15"/>
+
+                </StackPanel>
+
+                <StackPanel>
+                    <Label Content ="3. feladat: "                           
+                            FontSize="15"/>
+                    <Label Content=""
+                            FontSize="15"
+                            Margin="90 -30 50 10"
+                            x:Name="lblfeladat3"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <Label Content="4. feladat:"
+                           FontSize="15"/>
+                    <Label Content=""
+                           x:Name="lblfeladat4"
+                           FontSize="15"
+                           Margin=" 90 -30 50 10"   />
+                </StackPanel>
+
+
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            >
+
+                    <Label Content="6. feladat: "
+                           x:Name="lblfeladat6"
+                           FontSize="15"
+                          />
+
+                    <Label Content="Témakör: "
+                           Margin="90  -30 50 10"
+                           FontSize="15"/>
+
+
+                    <ComboBox x:Name="cbofeladat6"
+                              Margin=" 170 -35 50 10"
+                              Width="120"
+                              Height="22"
+                              FontSize="15"
+                              SelectionChanged="cbofeladat6_ComboBox"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <Label Content="Kérdés:"
+                            Margin="90  0 50 10"
+                            FontSize="15"/>
+                    <Label Content=""
+                             FontSize="15"
+                             Margin=" 170 -40 50 10"
+                             x:Name="lblfeladat7"/>
+
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Top">
+                    <Label Content="Válasz:"
+                           Margin="90  0 50 10"
+                           FontSize="15"/>
+                    <TextBox FontSize="15"                            
+                             Margin="170 -30 50 10"
+                             Height="22"
+                             Width="120"
+                             x:Name="txtValasz" />
+                    <Button Content=" Ellenőrzés"
+                            x:Name="btnEllenorzes"
+                            FontSize="15"
+                            Width="75"
+                            Margin="160 -40 -200 0"
+                            Height="22" Click="btnEllenorzes_Click"/>
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
